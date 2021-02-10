@@ -4,6 +4,12 @@
 <!--FONTS-->
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
+
+body{
+  overflow-x: hidden !important;
+  max-width: 90%;
+
+}
 .center {
   display: block;
   margin-left: auto;
@@ -93,8 +99,30 @@ h1{
   justify-content: center;
   align-items: center;
 }
+
+.fake-input{
+  position: relative;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.fake-input input{
+  border: none;
+  background-color: #fff;
+  display: block;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.fake-input img{
+position: absolute;
+top: 6px;
+left: 5px;
+}
 </style>
-  <body>
+  
 
     <div class="row">
       <header id="header" class="header">
@@ -110,6 +138,7 @@ h1{
             </li>
         </ul>
       </header>
+      <body>
     </div>
     <!-- Google Logo -->
     <div>
@@ -119,17 +148,23 @@ h1{
     <div>
       <!--Google search bar -->
       <!-- Search input text -->
-      <input  id="search-box" class="center" type="text" placeholder="Search Google or type URL">
+      <div class="fake-input">
+        <input type="text" placeholder="Search Google or type URL" />
+        <img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" width=25 />
+      </div>
+      
+      
       <br>
 
       <!-- Search Buttons -->
-      <div style="padding-top: 20px" class="btn-toolbar">
+      <div style="padding-top: 20px;" class="btn-toolbar">
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
       </div>
 
     </div>
     <br>
+  </body>
     <!-- footer contains link to the respective locations -->
     <div class="row">
       <footer id="footer" class="footer">
@@ -146,7 +181,7 @@ h1{
         </ul>
       </footer>
     </div>
-  </body>
+  
 
 
 
