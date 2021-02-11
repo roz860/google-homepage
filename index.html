@@ -63,8 +63,8 @@ input {
 a {
   color: #777;
   display: inline-block;
-  font-size: 15px;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 a:hover {
@@ -75,11 +75,16 @@ a:hover {
 .footer{
   position: fixed;
   bottom: 0;
-  right: 0;
-  left:0;
+  width:100%;
   font-family: 'Manrope', sans-serif;
   background-color: #f2f2f2;
-  
+
+}
+
+footer li{
+  display: inline;
+  padding: 0 10px 0 10px;
+  font-size: 15px;
 
 }
 
@@ -89,6 +94,9 @@ a:hover {
   width: 100%;
   font-family: 'Manrope', sans-serif;
   background-color: #ffffff;
+  display: inline;
+  font-size: 20px;
+  vertical-align: middle;
   
 }
 
@@ -99,6 +107,11 @@ header ul {
 header li{
   display: inline;
   padding: 0 10px 0 10px;
+}
+
+header img{
+  height: auto;
+  width: 30px;
 }
 
 h1{
@@ -156,10 +169,10 @@ left: 10px;
     <div class="row">
       <header id="header" class="header">
         <ul style="list-style-type:none;">
-          <li><a href="https://www.google.com">About</a></li>
-          <li><a href="https://www.google.com">Store</a></li>
-          <li style="float: right;"><a  href="https://www.google.com">circles</a></li>
-          <li style="float: right;"><img  src="https://icon-library.com/images/google-apps-icon-png/google-apps-icon-png-27.jpg" width=20></a></li>
+          <li style="float: left;"><a href="https://www.google.com">About</a></li>
+          <li></li><a href="https://www.google.com">Store</a></li>
+          <li style="float: right;"><a><img style="border-radius:15px" src="https://lh3.googleusercontent.com/ogw/ADGmqu9b6SAWFVOE9gl0cAC_HA_Wl8m8ALj8WdHkQVxe=s64-c-mo"/></a></li>
+          <li style="float: right;"><a><img  src="https://icon-library.com/images/google-apps-icon-png/google-apps-icon-png-27.jpg"/></a></li>
           <li style="float: right;"><a  href="https://www.google.com">Images</a></li>
           <li style="float: right;"><a href="https://www.google.com">Gmail</a></li>
             </li>
@@ -198,14 +211,12 @@ left: 10px;
       <footer class="footer">
         <ul style="list-style-type:none;">
 
-          <li>
-          <a style="margin-right: 10px" class="columna" href="https://www.google.com">Advertising</a>
-          <a style="margin-right: 10px" class="columna" href="https://www.google.com">Business</a>
-          <a style="margin-right: 10px" class="columna" href="https://www.google.com">How Search Works</a>
-          <a style="margin-right: 10px" class="columnb" href="https://www.google.com">Settings</a>
-          <a style="margin-right: 10px" class="columnb" href="https://www.google.com">Terms</a>
-          <a style="margin-right: 10px" class="columnb" href="https://www.google.com">Privacy</a>
-            </li>
+          <li><a href="https://www.google.com">Advertising</a></li>
+          <li><a href="https://www.google.com">Business</a></li>
+          <li><a href="https://www.google.com">How Search Works</a></li>
+          <li style="float: right;"><a href="https://www.google.com">Settings</a></li>
+          <li style="float: right;"><a href="https://www.google.com">Terms</a></li>
+          <li style="float: right;"><a href="https://www.google.com">Privacy</a></li>
         </ul>
       </footer>
     </div>
