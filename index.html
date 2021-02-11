@@ -6,8 +6,7 @@
 
 
 html, body{
-  overflow-x: hidden !important;
-  max-width: 90%;
+  margin: 0;
 
 }
 
@@ -55,7 +54,9 @@ input {
 }
 
 .btn-toolbar button:hover {
-  background-color: #88888888;
+  border-color: black;
+  border-width: 10px;
+  box-shadow: 0 1px 2.5px #2f2f2f;
 }
 
 ul {
@@ -76,25 +77,36 @@ a:hover {
   text-decoration: underline;
 }
 
-.column {
-  float: left;
+.columna {
+  position: relative;
+  left: auto;
+}
+
+.columnb {
+  position: static;
+  right: 0;
 }
 
 .footer{
-  position:absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  right: 0;
+  left:0;
   font-family: 'Manrope', sans-serif;
   background-color: #f2f2f2;
+  
 
 }
 
 .header{
-  position:absolute;
+  position: absolute;
   top: 0;
-  width: 100%;
+  right: 0;
+  left:0;
   font-family: 'Manrope', sans-serif;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  
+
 
 }
 
@@ -141,7 +153,7 @@ left: 10px;
 
 .fake-input:hover{
   color: #f2f2f2;
-  box-shadow: 0 5px 15px #2f2f2f;
+  box-shadow: 0 2px 5px #2f2f2f;
 }
 
 
@@ -155,12 +167,12 @@ left: 10px;
         <ul style="list-style-type:none;">
 
           <li>
-            <a class="column" href="https://www.google.com">About</a>
-          <a class="column" href="https://www.google.com">Store</a>
-          <a class="column" href="https://www.google.com">images</a>
-          <a class="column" href="https://www.google.com">gmail</a>
-          <a class="column" href="https://www.google.com">squares</a>
-          <a class="column" href="https://www.google.com">circle</a>
+          <a class="columna" href="https://www.google.com">About</a>
+          <a class="columna" href="https://www.google.com">Store</a>
+          <a class="columnb" href="https://www.google.com">images</a>
+          <a class="columnb" href="https://www.google.com">gmail</a>
+          <a class="columnb" href="https://www.google.com">squares</a>
+          <a class="columnb" href="https://www.google.com">circle</a>
             </li>
         </ul>
       </header>
@@ -174,7 +186,7 @@ left: 10px;
       <!--Google search bar -->
       <!-- Search input text -->
       <div class="fake-input">
-        <input type="text" placeholder="Search Google or type URL" />
+        <input type="text" placeholder="Search Google or type URL" onfocus="placeholder = ''" onblur="placeholder = 'Search Google or type URL'"/>
         <img id="magnify" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" width=15 />
       
         <img id="mic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/833px-Google_mic.svg.png" width=11>
@@ -194,16 +206,16 @@ left: 10px;
   
     <!-- footer contains link to the respective locations -->
     <div class="row">
-      <footer id="footer" class="footer">
+      <footer class="footer">
         <ul style="list-style-type:none;">
 
           <li>
-            <a class="column" href="https://www.google.com">Advertising</a>
-          <a class="column" href="https://www.google.com">Business</a>
-          <a class="column" href="https://www.google.com">How Search Works</a>
-          <a class="column" href="https://www.google.com">Privacy</a>
-          <a class="column" href="https://www.google.com">Terms</a>
-          <a class="column" href="https://www.google.com">Settings</a>
+          <a style="margin-right: 10px" class="columna" href="https://www.google.com">Advertising</a>
+          <a style="margin-right: 10px" class="columna" href="https://www.google.com">Business</a>
+          <a style="margin-right: 10px" class="columna" href="https://www.google.com">How Search Works</a>
+          <a style="margin-right: 10px" class="columnb" href="https://www.google.com">Settings</a>
+          <a style="margin-right: 10px" class="columnb" href="https://www.google.com">Terms</a>
+          <a style="margin-right: 10px" class="columnb" href="https://www.google.com">Privacy</a>
             </li>
         </ul>
       </footer>
